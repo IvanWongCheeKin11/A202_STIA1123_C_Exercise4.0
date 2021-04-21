@@ -8,12 +8,12 @@ public class Car {
     private double price,downPayment;
     private int interestRate;
     private int period;
-    private int month;
+    private int month = 12;
 
 
     //Constructor
     Car(double RCL, int P){
-        System.out.print("Please Enter Price of Car(RM): ");
+        System.out.print("\nPlease Enter Price of Car(RM): ");
         this.price = s.nextInt();
         System.out.print("Please Enter Down Payment(RM): ");
         this.downPayment = s.nextDouble();
@@ -47,7 +47,7 @@ public class Car {
     }
 
     public double paymentAMonth() {
-        return this.RemainingCarLoan()/(period*month);
+        return ((price - downPayment) + (price - downPayment)*(interestRate)/100*(period))/(period*month);
 
 
     }

@@ -7,6 +7,7 @@ public class Toyota extends Car {
 
 
 
+
     public Toyota(double RCL, int M, int P) {
         super(RCL,M);
         month = P;
@@ -25,7 +26,7 @@ public class Toyota extends Car {
     }
 
     public double getPaymentAMonth() {
-        return this.paymentAMonth;
+        return this.paymentAMonth();
     }
 
 }
